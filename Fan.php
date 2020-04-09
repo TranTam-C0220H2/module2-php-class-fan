@@ -60,7 +60,7 @@ class Fan
 
     public function toString()
     {
-        if ($this->status) {
+        if ($this->getStatus()) {
             return 'Quat dang bat voi toc do ' . $this->getSpeed() . ', mau quat ' . $this->getColor() . ', ban kinh quat ' . $this->getRadius();
         } else {
             return 'Quat dang tat voi mau quat ' . $this->getColor() . ', ban kinh quat ' . $this->getRadius();
